@@ -1,0 +1,34 @@
+{% include 'header.html'%}
+
+<h3 style="text-align: center;color: aliceblue;">Request List</h3>
+    <table style="margin: 0px 5px 0px 10px;color: aliceblue;" class="table" border="1px solid blue">
+
+        <tr>
+            <th>Serial NO.</th>
+            <th>Student Name:</th>
+            <th>Father's Name:</th>
+            <th>Mobile No:</th>
+            <th>Email:</th>
+            <th>Date of Birth:</th>
+            <th>Adress:</th>
+            <th>ID Number:</th>
+            <th>Id Photo:</th>
+            <th>Roll No:</th>
+            <th>Form Submission Date:</th>
+        </tr>
+            {%for x in data %}
+        <tr><td>{{x.sno}}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.fname}}</td>
+            <td>{{x.contact}}</td>
+            <td>{{x.email}}</td>
+            <td>{{x.dob}}</td>
+            <td>{{x.address}}</td>
+            <td>{{x.idno}}</td>
+            <td><img src="{{x.idimg}}"></td>
+            <td>{{x.rnumber}}</td>
+            <td>{{x.timeStamp}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% include 'footer.html'%}

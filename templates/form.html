@@ -1,0 +1,99 @@
+{% include 'header.html' %}
+<body>
+<div class="forms">
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Apply For Hostel</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <div class="row">
+          <div class="col">
+           <label>Name:</label>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Name" name="name">
+          </div>
+         
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Father's Name:</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Fname" name="fname">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Mobile Number:</label>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="contact number" name="contact">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>EMail:</label>
+            </div>
+            <div class="col">
+                <input type="email" class="form-control" placeholder="email" name="email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>sex:</label>
+            </div>
+            <div class="col">
+                <input type="radio" name="sex" value="male">Male
+                <input type="radio" name="sex" value="female">Female
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Date of birth:</label>
+            </div>
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Name" name="dob">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Address:</label>
+            </div>
+            <div class="col">
+                <textarea rows="3" cols="30" type="area" class="form-control" placeholder="Address" name="address"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>ID Number:</label>
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" placeholder="Id number" name="idno">
+                <input type="file" class="form-control"  name="idimg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Roll Number:</label>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="roll number" name="rnumber">
+            </div>
+        </div>
+        <div class="row">
+        <input style="padding: 5px; margin: 5px;" type="submit"  value="Submit" class="col btn btn-primary submit"/>
+        <input style="padding: 5px; margin: 5px;" type="reset"  value="Reset" class="col btn btn-primary submit">
+        </div>
+    </div>
+        </fieldset>
+      </form>
+</body>
+{% include 'footer.html' %}
