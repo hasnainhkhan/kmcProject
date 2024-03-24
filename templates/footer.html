@@ -1,59 +1,59 @@
 {% load static %}
-<div class="width-100 margin-top-50 footer">
-    <div class="container">
-       <div class="width-25">
-          <h2 class="quicklink-heading">Quick Links</h2>
-          <ul class="quicklink-menu">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About us</a></li>
-             <li><a href="#">Apply Hostel</a></li>
-             <li><a href="#">Hostel Enquiry</a></li>
-          </ul>
-       </div>
-       <div class="width-25">
-          <h2 class="quicklink-heading">Student Section</h2>
-          <ul class="quicklink-menu">
-             <li><a href="#">Merit List</a></li>
-             <li><a href="#">Pay Fee</a></li>
-             <li><a href="#">Phots</a></li>
-             <!-- <li><a href="#">Placements</a></li> -->
-          </ul>
-       </div>
-       <div class="width-25">
-          <h2 class="quicklink-heading">Information Link</h2>
-          <ul class="quicklink-menu">
-             <li><a href="#">News</a></li>
-             <li><a href="#">Privacy & Policy</a></li>
-             <li><a href="#">Anti-Ragging</a></li>
-             <li><a href="#">Apply Hostel</a></li>
-          </ul>
-       </div>
-       <div class="width-25">
-          <h2 class="quicklink-heading">GET IN TOUCH</h2>
-          <ul class="get-in-touch">
-             <li><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL:<a href="#" class="footer-e-mail"> hhk2170@gmail.com</a></li>
-             <li><i class="fa fa-headphones" aria-hidden="true"></i> WHATS-APP: +91 -7880992170</li>
-             <li><i class="fa fa-fax" aria-hidden="true"></i> CONTACT NO.: +91 7880992170</li>
-             <li><i class="fa fa-globe" aria-hidden="true"></i> WEBSITE:<a href="#" class="footer-website"> www.com</a></li>
-          </ul>
-          <ul class="social-media">
-             <li><a href="#"><img src="{%static 'img/facebook.png' %}"></a></li>
-             <li><a href="#"><img src="{%static 'img/twitter.png' %}"></a></li>
-             <li><a href="#"><img src="{%static 'img/instagram.png' %}"></a></li>
-             <li><a href="#"><img src="{%static 'img/youtube.png' %}"></a></li>
-          </ul>
-       </div>
-    </div>
- </div>
- <!---------- Footer HTML Ends --------->
- <!---------- Footer Copyright HTML Starts --------->
-<div class="width-100 footer2-bacbor">
-   <p class="footer2-content">Copyright @2002 - 2023, T.H.S TEAM All Rights Reserved</p>
+<div >
+   <div class="width-100 margin-top-50 footer">
+      <div class="container">
+         <div class="width-25">
+            <h2 class="quicklink-heading">Quick Links</h2>
+            <ul class="quicklink-menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="{%url 'aboutus'%}">About us</a></li>
+               <li><a href="{%url 'form'%}">Apply Hostel</a></li>
+               <li><a href="">Hostel Enquiry</a></li>
+            </ul>
+         </div>
+         <div class="width-25">
+            <h2 class="quicklink-heading">Student Section</h2>
+            <ul class="quicklink-menu">
+               <li><a href="#">Merit List</a></li>
+               <li><a href="#">Pay Fee</a></li>
+               <li><a href="{%url 'photos' %}">Photos</a></li>
+               <!-- <li><a href="#">Placements</a></li> -->
+            </ul>
+         </div>
+         <div class="width-25">
+            <h2 class="quicklink-heading">Information Link</h2>
+            <ul class="quicklink-menu">
+               <li><a href="#">News</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="{% url 'ragging'%}">Anti-Ragging</a></li>
+               <li><a href="{%url 'form'%}">Apply Hostel</a></li>
+            </ul>
+         </div>
+         <div class="width-25">
+            <h2 class="quicklink-heading">GET IN TOUCH</h2>
+            <ul class="get-in-touch">
+               <li><i class="fa fa-envelope-o" aria-hidden="true"></i> E-MAIL:<a href="#" class="footer-e-mail">
+                     hhk2170@gmail.com</a></li>
+               <li><i class="fa fa-headphones" aria-hidden="true"></i> WHATS-APP: +91 -7880992170</li>
+               <li><i class="fa fa-fax" aria-hidden="true"></i> CONTACT NO.: +91 7880992170</li>
+               <li><i class="fa fa-globe" aria-hidden="true"></i> WEBSITE:<a href="#" class="footer-website">
+                     www.com</a></li>
+            </ul>
+            <ul class="social-media">
+               <li><a href="#"><img src="{%static 'img/facebook.png' %}"></a></li>
+               <li><a href="#"><img src="{%static 'img/twitter.png' %}"></a></li>
+               <li><a href="#"><img src="{%static 'img/instagram.png' %}"></a></li>
+               <li><a href="#"><img src="{%static 'img/youtube.png' %}"></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!---------- Footer HTML Ends --------->
+   <!---------- Footer Copyright HTML Starts --------->
+   <div class="width-100 footer2-bacbor">
+      <p class="footer2-content">Copyright @2002 - 2023, T.H.S TEAM All Rights Reserved</p>
+   </div>
 </div>
-</body>
-</html>
-<!---------- Footer Copyright HTML Ends --------->
-    
 </body>
 
 </html>

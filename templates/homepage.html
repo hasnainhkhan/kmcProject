@@ -1,4 +1,10 @@
+{% load static %}
 {% include 'header.html' %}
-<h1>Home Page</h1>
-<button class="btn btn-success" href="{% url 'logout' %}">logout</button>
+
+<button  class="btn btn-success" ><a href="{% url 'logout' %}" onclick="logout()">logout</a></button>
+<button class="btn btn-success" ><a href="#">Complain</a></button>
+<img src="{% static 'img/kmcbg2.jpg' %}">
+
+
+
 {% include 'footer.html'%}
