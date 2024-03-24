@@ -1,0 +1,10 @@
+{% include 'header.html'%}
+{% load static%}
+<body >
+    <h1>Admin Dashboard</h1>
+    
+    <button class="btn btn-success" ><a href="{% url 'log_out' %}">logout</a></button>
+    <button class="btn btn-success" ><a href="{% url 'rlist' %}">Request List</a></button>
+    <button class="btn btn-success" ><a href="{% url 'notice' %}">Notice</a></button>
+</body>
+{%  include 'footer.html'%}
