@@ -1,6 +1,19 @@
-# kmcProject
-<svg width="100" height="100">
-  <rect x="20" y="20" width="60" height="60" fill="#FF69B4" stroke="#000" stroke-width="2" />
-  <text x="50" y="70" font-size="24" font-family="sans-serif">My Project</text>
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          display: flex;
+          width: 100%;
+          height: 300px;
+          background-color: black;
+          color: white;
+        }
+      </style>
+
+      <div class="container">
+        <h1>Hi there, my name is Nikola 👋</h1>
+      </div>
+    </div>
+  </foreignObject>
 </svg>
-<h2 style="color:red;">Hostel Management System</h2>
