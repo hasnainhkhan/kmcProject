@@ -8,6 +8,6 @@
 </style>
 </head>
 <body>
-<h2>Hostel Management System</h2>
+<h2 style="color:red;">Hostel Management System</h2>
 </body>
 </html>
