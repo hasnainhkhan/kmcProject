@@ -1,4 +1,5 @@
 # kmcProject
+<html>
 <head>
   <style>
   h2{
@@ -9,3 +10,4 @@
 <body>
 <h2>Hostel Management System</h2>
 </body>
+</html>
